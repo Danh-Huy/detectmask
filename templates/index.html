@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body>    
+        <center>
+            <div class='cont'>
+                <h2>HỆ THỐNG NHẬN DIỆN CHÓ MÈO</h2>
+                <img style="max-width:300px; border-radius:1rem"
+             src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715734_960_720.jpg"
+             alt="User Image" id="display_image">
+            </div>
+            
+            <p>Các định dạng được hỗ trợ: PNG, JPG và JPEG</p>
+            
+
+        <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
+            <input type="file" name='image' class='btn'><br><br><br>
+            <input type="submit" class='btn'>
+        </form>
+
+    </center>
+
+    </body>
+</html>
