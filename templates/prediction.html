@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>face Detection</title>
         <meta charset="UTF-8">
         <link href="static/style.css" rel="stylesheet">
     </head>
@@ -11,15 +11,15 @@
                 
             
             {% if data[1] > 0.50 %}
-            <h2>Là chó nhaaaaaaa!!!!</h2>
+            <h2>Đeo khẩu trang!!!!</h2>
             
             {%else%}
-            <h2> Mèo chắc rồiiii!!! </h2>
+            <h2> Không đeo khẩu trang!!! </h2>
             
             {%endif%}
 
         </div>
-            <h2>Độ chính xác<br> <br> Mèo: <span>{{data[0]}}</span> <br>Chó: <span>{{data[1]}}</span><br> </h2>
+            <h2>Độ chính xác<br> <br> Đeo khẩu trang: <span>{{data[0]}}</span> <br>Không đeo khẩu trang: <span>{{data[1]}}</span><br> </h2>
             
             <img style="max-width:300px; border-radius:1rem" src="{{url_for('load_img')}}" alt='img'>
             <br>
